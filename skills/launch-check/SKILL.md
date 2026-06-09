@@ -1,27 +1,24 @@
 ---
-name: release-readiness
-description: 기능, 검증, 문서화가 배포 가능 수준인지 확인할 때 사용
+name: launch-check
+description: 기능, 정보, 설명이 내보낼 수 있는 수준인지 확인할 때 사용
 ---
 
-# Goal
-현재 브랜치가 최소 배포 가능 상태인지 점검한다.
+# 목적
+지금 상태로 사람들에게 공개해도 되는지 점검한다.
 
-# Required checks
-- npm run lint
-- npm run test
-- npm run build
-- README 최신화 여부
-- 환경 변수 설명 여부
-- 데이터 갱신 방법 문서화 여부
+# 기술 확인
+- 오류 없이 잘 돌아가는지
+- 사용 방법 설명이 최신인지
+- 맛집 정보 갱신하는 방법이 적혀 있는지
 
-# Product checks
-- 검색 가능
-- 카테고리 필터 가능
-- 거리/평점 정렬 가능
-- 영업 종료 가게 기본 숨김
-- 가게 링크 이동 가능
+# 기능 확인
+- 검색 되는지
+- 종류 필터 되는지
+- 거리/평점 정렬 되는지
+- 문 닫은 가게 숨겨지는지
+- 링크 눌렸는지
 
-# Output
-- release blocker
-- nice to have
-- ready / not ready 판정
+# 결과
+- 공개 막는 문제
+- 있으면 좋은 것
+- 공개 가능 / 불가 판정
